@@ -1,27 +1,42 @@
 # HD44780-Python-Module
 Python 3.x to use with the HD44780 LCD controller. Testing done using a 16x2 LCD and 20x4 LCD, both from Adafruit and a Pi3
 
-This requires the RPI.GPIO module. 
+This requires the RPI.GPIO module.
 
 Also included is an example file which demonstrates some of the base functions.
 
 Connections I used between the Pi and LCD are as follows:
 
 LCD Gnd to Pi Gnd
+
 LCD VDD to Pi 5V
-LCD V0 to middle pin of a 10k Potentiometer - Potentiometer required for contrast adjustment
+
+LCD V0 to middle pin of a 10k Potentiometer - Potentiometer required for contrast 
+
 10k Potentiometer outer leg 1 to Pi Gnd 
+
 10k Potentiometer outer leg 2 to Pi 5V
+
 LCD RS to Pi 4
+
 LCD RW to Pi 17 when used, otherwise to Pi Gnd
+
 LCD E to Pi 27
+
 LCD DB0-DB3 - not connected
+
 LCD DB4 to Pi 5
+
 LCD DB5 to Pi 6
+
 LCD DB6 to Pi 13
+
 LCD DB7 to Pi 19
+
 LCD BL1 to Pi 5V - Backlight power
+
 LCD BL2 to 160 ohm resistor which connects to Pi Gnd
+
 
 Current functions include:
 
